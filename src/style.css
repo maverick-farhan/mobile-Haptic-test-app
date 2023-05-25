@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+:root{
+--btn-color:#FF0090;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+color:#fff;
+}
+
+html,body{
+width:100%;
+height:100%;
+font-family: 'Montserrat Alternates', sans-serif;
+background-color: #050016;
+}
+header{
+width:100vw;
+height:10vh;
+display:flex;
+justify-content: space-between;
+align-items:center;
+padding:0px 100px;
+}
+
+h3.logo{
+font-size:29px;
+font-weight:300;
+}
+header div a{
+color:#fff;
+text-decoration:none;
+font-size:40px;
+}
+
+main{
+width:100vw;
+height:90vh;
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+
+div.text-content{
+width:55%;
+height:100%;
+padding:100px;
+}
+div.text-content h1{
+font-size:4.1rem;
+line-height:4.7rem;
+}
+
+div.text-content h3{
+font-weight:300;
+margin-top:3rem;
+font-size:1.9rem;
+color:#E8E2E2;
+}
+
+div.input-content{
+width:45%;
+height:100%;
+display:flex;
+color:#000;
+align-items:center;
+}
+button.btn{
+all:unset;
+position:relative;
+display:block;
+width:19rem;
+padding:10px;
+height:4.5rem;
+cursor:pointer;
+border-radius:40px;
+background-color: var(--btn-color);
+font-size:36px;
+text-align:center;
+box-sizing: border-box;
+box-shadow:2px 4px 30px yellow;
+animation:box-shadow 13s ease infinite alternate;
+z-index:1;
+transition:box-shadow 2s ease;
+}
+
+.btn i{
+color:yellow;
+}
+
+div.write-text{
+display:flex;
+flex-direction:column;
+width:100%;
+
+}
+
+div.icon{
+align-self: flex-end;
+margin-right:5rem;
+padding:10px;
+font-size:30px;
+}
+
+div.icon i{
+cursor:pointer;
+}
+div.icon i.ri-sun-fill{
+color:yellow;
+}
+
+div.icon i.ri-moon-fill:hover{
+color:#ddd;
+}
+
+div.icon i.ri-sun-fill:hover{
+color:orange;
+}
+textarea{
+all:unset;
+width:500px;
+overflow-wrap: break-word;
+word-break: break-all;
+height:20rem;
+border-radius:30px;
+padding:20px;
+border:1px solid #FF0090;
+color:#eee;
+text-transform:uppercase;
+letter-spacing:.2rem;
+}
+div.clear-btn{
+align-self: flex-end;
+margin-right:5rem;
+}
+
+div.clear-btn button{
+all:unset;
+width:90px;
+height:1.6rem;
+text-align:center;
+font-size:18px;
+color:var(--btn-color);
+background-color: pink;
+padding:5px;
+border-radius:10px;
+margin-top:10px;
+cursor:pointer;
+transition:all .5s ease;
+}
+
+div.clear-btn button:hover{
+font-size:20px;
+}
+
+div.clear-btn i{
+color:var(--btn-color);
+}
+
+
+
+
+@keyframes box-shadow{
+0%{
+box-shadow:2px 4px 30px yellow;
+}
+20%{
+box-shadow:2px 6px 26px yellow;
+}
+40%{
+box-shadow:4px 8px 20px yellow;
+}
+60%{
+box-shadow:4px 4px 25px yellow;
+}
+80%{
+box-shadow:2px 5px 20px yellow;
+}
+100%{
+box-shadow:1px 2px 18px yellow;
+}
+}
+
